@@ -13,7 +13,7 @@ const resolvers = {
               return userData;
             }
           
-            throw new AuthenticationError('Not logged in');
+            throw new AuthenticationError('Not logged in.');
           }
     },
     Mutation: {
@@ -38,6 +38,7 @@ const resolvers = {
             return { token, user };
         },
         saveBook: async (parent, { input }, context) => {
+          console.log(context.body);
           if (context.user) {
               const updatedUser = await User.findByIdAndUpdate(
                   { _id: context.user._id },
@@ -47,7 +48,7 @@ const resolvers = {
 
               return updatedUser;
           }
-          throw new AuthenticationError('Not logged in');
+          throw new AuthenticationError('Bad things');
       },
         removeBook: async (parent, args, context) => {
           if (context.user) {
