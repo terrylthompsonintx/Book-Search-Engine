@@ -1,5 +1,6 @@
 
-  ![CCO Logo](./assets/images/mit.png)
+  ![Image of app](https://github.com/terrylthompsonintx/Book-Search-Engine/blob/master/sc.png)
+  ![Link to deployed app.](https://cryptic-inlet-28634.herokuapp.com/)
   # Book Search Engine
   ### Table of Contents
   1. [Program Description.](#program-description)
